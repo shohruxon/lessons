@@ -1,0 +1,7 @@
+extends layouts/layout
+block content
+    h1 hello world
+    form(action="/add/productAdd" method="POST")
+     input#name(type="text" name="name" placeholder="name")
+     input#email(type="url" name="photo" placeholder="photo")
+     button add Product     

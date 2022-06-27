@@ -1,0 +1,9 @@
+extends layouts/layout
+block content
+    h1 Products
+    .productsNew
+        each product in server  
+            .product
+                img(src=product.photo, alt="")
+                h2=product.name
+                h4=product.id
